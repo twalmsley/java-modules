@@ -3,9 +3,11 @@
  */
 package libtwo;
 
+import hidden.libtwo.Hidden;
+
 public class Library {
     public boolean someLibraryMethod() {
-        System.out.println("libtwo.Library :-)");
+        Hidden.doLibTwoHiddenWork();
         return true;
     }
 }

@@ -8,6 +8,15 @@ public class App {
     public static void main(String[] args) {
         new libone.Library().someLibraryMethod();
         new libtwo.Library().someLibraryMethod();
+
+        //
+        // Cannot use these hidden packages and classes, the
+        // Java module system disallows it at compile time and
+        // run time.
+        //
+        // hidden.libone.Hidden.doLibOneHiddenWork();
+        //hidden.libtwo.Hidden.doLibTwoHiddenWork();
+
         System.out.println(new App().getGreeting());
     }
 

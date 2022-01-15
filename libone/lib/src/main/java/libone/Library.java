@@ -3,9 +3,11 @@
  */
 package libone;
 
+import hidden.libone.Hidden;
+
 public class Library {
     public boolean someLibraryMethod() {
-        System.out.println("libone.Library!");
+        Hidden.doLibOneHiddenWork();
         return true;
     }
 }
