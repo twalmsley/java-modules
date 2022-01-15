@@ -37,6 +37,8 @@ gradle clean build
 
 Use `gradle`:
 ```shell
+cd java-modules/app/app
+
 gradle run
 ```
 
