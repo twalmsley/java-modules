@@ -3,6 +3,7 @@
  */
 package libtwo;
 
+import hidden.libtwo.Library;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 

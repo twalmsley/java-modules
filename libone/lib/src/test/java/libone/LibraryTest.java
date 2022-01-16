@@ -3,11 +3,14 @@
  */
 package libone;
 
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+import hidden.libone.Library;
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
 
 class LibraryTest {
-    @Test void testSomeLibraryMethod() {
+    @Test
+    void testSomeLibraryMethod() {
         Library classUnderTest = new Library();
         assertTrue(classUnderTest.someLibraryMethod(), "someLibraryMethod should return 'true'");
     }

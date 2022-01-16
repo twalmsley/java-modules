@@ -31,8 +31,8 @@ dependencies {
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
 
     // This dependency is used by the application.
-    implementation 'modstest:libone:1.0.1'
-    implementation 'modstest:libtwo:1.0.1'
+    implementation 'modstest:libone:1.0.2'
+    implementation 'modstest:libtwo:1.0.2'
 }
 
 application {

@@ -3,11 +3,19 @@
  */
 package app;
 
+import java.util.ServiceLoader;
+
+import libone.LibOneApi;
+import libtwo.LibTwoApi;
+
 public class App {
 
     public static void main(String[] args) {
-        new libone.Library().someLibraryMethod();
-        new libtwo.Library().someLibraryMethod();
+        final ServiceLoader<LibOneApi> libOneServices = ServiceLoader.load(LibOneApi.class);
+        final ServiceLoader<LibTwoApi> libTwoServices = ServiceLoader.load(LibTwoApi.class);
+
+        libOneServices.forEach(LibOneApi::someLibraryMethod);
+        libTwoServices.forEach(LibTwoApi::someLibraryMethod);
 
         //
         // Cannot use these hidden packages and classes, the
