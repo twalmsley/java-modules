@@ -15,7 +15,7 @@ Project `app` depends on the two libraries and all three projects are modular si
 - Java 9 or above installed
 - Gradle installed
 
-## Building
+## Building (and running)
 
 ```shell
 git clone git@github.com:twalmsley/java-modules.git
@@ -30,7 +30,7 @@ gradle clean build publishToMavenLocal
 
 cd ../app
 
-gradle clean build
+gradle clean build run
 ```
 
 ## Build a Small Custom JRE
